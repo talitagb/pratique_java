@@ -7,6 +7,7 @@ public class ExercicioParImpar {
 
 	public static void main(String[] args) {
 		//Este programa lê um número inteiro e diz se ele é par ou ímpar.
+		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
@@ -21,7 +22,6 @@ public class ExercicioParImpar {
 			System.out.println("Ímpar");
 		}
 
-		
 		sc.close();
 	}
 
