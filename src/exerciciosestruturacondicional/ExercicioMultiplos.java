@@ -1,13 +1,11 @@
 package exerciciosestruturacondicional;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class ExercicioMultiplos {
 
 	public static void main(String[] args) {
 		//Este programa lê dois números inteiros e mostra se são múltiplos entre si ou não.
-		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
 		int a, b;
