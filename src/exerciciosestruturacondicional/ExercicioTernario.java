@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ExercicioTernario {
 
 	public static void main(String[] args) {
-		//Esse exercício mostra como funciona a estrutura condicional ternária.
+		//Este exercício mostra como funciona a estrutura condicional ternária.
 		//É uma opção ao if-else quando se deseja decidir um valor com base em uma condição.
 		Scanner sc = new Scanner(System.in);
 		
