@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class ExercicioSoma {
 
 	public static void main(String[] args) {
+		// Este programa lê dois números inteiros e calcula a soma deles
+
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 

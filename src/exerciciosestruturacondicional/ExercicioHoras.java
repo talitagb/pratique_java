@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ExercicioHoras {
 
 	public static void main(String[] args) {
-		//Este programa lê a hora inicial e hora final de um jogo e calcula qual foi a duração dele.
+		// Este programa lê a hora inicial e hora final de um jogo e calcula qual foi a duração dele.
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		

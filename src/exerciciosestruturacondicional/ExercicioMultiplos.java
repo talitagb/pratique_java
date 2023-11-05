@@ -22,7 +22,6 @@ public class ExercicioMultiplos {
 			System.out.println("NÃO SÃO MÚLTIPLOS");
 		}
 		
-		
 		sc.close();
 	}
 
