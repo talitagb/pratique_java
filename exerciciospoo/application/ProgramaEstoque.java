@@ -19,15 +19,18 @@ public class ProgramaEstoque {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		Produto produto = new Produto();
-
 		System.out.println("Insira dados do produto: ");
 		System.out.println("Nome: ");
-		produto.nome = sc.nextLine();
+		String nome = sc.nextLine();
 		System.out.println("Preço: ");
-		produto.preco = sc.nextDouble();
-		System.out.println("Quantidade no estoque: ");
-		produto.quantidade = sc.nextInt();
+		double preco = sc.nextDouble();
+
+		Produto produto = new Produto(nome, preco);
+		
+		produto.setNome("Computador");
+		System.out.println("Nome atualizado: " + produto.getNome());
+		produto.setPreco(1200.00);
+		System.out.println("Preço atualizado: " + produto.getPreco());
 
 		System.out.println();
 		System.out.println("Dados do produto: " + produto);
