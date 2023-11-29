@@ -21,9 +21,9 @@ public class ProgramaFuncionarioList {
 		for (int i = 1; i <= n; i++) {
 			System.out.println();
 			System.out.println("Funcionário #" + i + ": ");
-
 			System.out.print("Id: ");
 			int id = sc.nextInt();
+			
 			while (hasId(list, id)) {
 				System.out.print("Esse ID já possui, tente novamente: ");
 				id = sc.nextInt();
@@ -47,14 +47,14 @@ public class ProgramaFuncionarioList {
 			System.out.println("Este id não existe!");
 		} else {
 			System.out.print("Indique a porcentagem");
-			double percentage = sc.nextDouble();
-			func.incremento(percentage);
+			double porcentagem = sc.nextDouble();
+			func.incremento(porcentagem);
 		}
 
 		// PARTE 3 - Listando funcionários:
 
 		System.out.println();
-		System.out.println("List of employees:");
+		System.out.println("Lista de funconários:");
 		for (FuncionarioList obj : list) {
 			System.out.println(obj);
 		}
