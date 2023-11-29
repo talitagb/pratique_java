@@ -2,6 +2,7 @@ package application;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 import entities.FuncionarioList;
@@ -9,6 +10,7 @@ import entities.FuncionarioList;
 public class ProgramaFuncionarioList {
 
 	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
 		List<FuncionarioList> list = new ArrayList<>();
@@ -40,13 +42,13 @@ public class ProgramaFuncionarioList {
 		// PARTE 2 - Atualizando o salário de determinado empregado:
 
 		System.out.println();
-		System.out.print("Indique o ID do funcionário que terá aumento salarial:");
+		System.out.print("Indique o ID do funcionário que terá aumento salarial: ");
 		int id = sc.nextInt();
 		FuncionarioList func = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
 		if (func == null) {
 			System.out.println("Este id não existe!");
 		} else {
-			System.out.print("Indique a porcentagem");
+			System.out.print("Indique a porcentagem: ");
 			double porcentagem = sc.nextDouble();
 			func.incremento(porcentagem);
 		}
