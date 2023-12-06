@@ -11,9 +11,9 @@ public class DataHora3 {
 		// for (String s : ZoneId.getAvailableZoneIds())
 		// System.out.println(s);
 
-		LocalDate d04 = LocalDate.parse("2022-07-20");
-		LocalDateTime d05 = LocalDateTime.parse("2022-07-20T01:30:26");
-		Instant d06 = Instant.parse("2022-07-20T01:30:26Z");
+		LocalDate d04 = LocalDate.parse("2023-12-06");
+		LocalDateTime d05 = LocalDateTime.parse("2023-12-06T01:30:26");
+		Instant d06 = Instant.parse("2023-12-06T01:30:26Z");
 
 		LocalDate r1 = LocalDate.ofInstant(d06, ZoneId.systemDefault());
 		LocalDate r2 = LocalDate.ofInstant(d06, ZoneId.of("Portugal"));
