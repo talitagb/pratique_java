@@ -1,53 +1,88 @@
 package entities;
 
-
-import java.util.Date;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
 
 import entities.enums.OrderStatus;
 
 public class Order {
 
-	private Integer id;
-	private Date moment;
-	private OrderStatus status;
-	
-	public Order() {
-	}
-	
-	public Order(Integer id, Date moment, OrderStatus status) {
-		this.id = id;
-		this.moment = moment;
-		this.status = status;
-	}
+    private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 
-	public Integer getId() {
-		return id;
-	}
+    private LocalDateTime moment;
+    private OrderStatus status;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    private Client client;
+    private List<OrderItem> items = new ArrayList<>();
 
-	public Date getMoment() {
-		return moment;
-	}
+    public Order(LocalDateTime moment, OrderStatus status, Client client) {
+        this.moment = moment;
+        this.status = status;
+        this.client = client;
+    }
 
-	public void setMoment(Date moment) {
-		this.moment = moment;
-	}
+    public LocalDateTime getMoment() {
+        return moment;
+    }
 
-	public OrderStatus getStatus() {
-		return status;
-	}
+    public void setMoment(LocalDateTime moment) {
+        this.moment = moment;
+    }
 
-	public void setStatus(OrderStatus status) {
-		this.status = status;
-	}
+    public OrderStatus getStatus() {
+        return status;
+    }
 
-	@Override
-	public String toString() {
-		return "Order [id=" + id + ", moment=" + moment + ", status=" + status + "]";
-	}
-	
-	
+    public void setStatus(OrderStatus status) {
+        this.status = status;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
+
+    public List<OrderItem> getItems() {
+        return items;
+    }
+
+    public void addItem(OrderItem item) {
+        items.add(item);
+    }
+
+    public void removeItem(OrderItem item) {
+        items.remove(item);
+    }
+
+    public double total() {
+        double sum = 0.0;
+        for (OrderItem item : items) {
+            sum += item.subTotal();
+        }
+        return sum;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Order moment: ");
+        sb.append(dtf.format(moment) + "\n");
+        sb.append("Order status: ");
+        sb.append(status + "\n");
+        sb.append("Client: ");
+        sb.append(client + "\n");
+        sb.append("Order items:\n");
+        for (OrderItem item : items) {
+            sb.append(item + "\n");
+        }
+        sb.append("Total price: $");
+        sb.append(String.format("%.2f", total()));
+        return sb.toString();
+    }
+  
 }
