@@ -1,11 +1,12 @@
-package entities;
+package exerciciospoo.entities;
+
+import exerciciospoo.entities.enums.OrderStatus;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-import entities.enums.OrderStatus;
 
 public class Order {
 

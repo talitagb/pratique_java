@@ -1,4 +1,4 @@
-package entities.enums;
+package exerciciospoo.entities.enums;
 
 public enum WorkerLevel {
 	JUNIOR,
