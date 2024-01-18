@@ -1,4 +1,4 @@
-package entities;
+package exerciciospoo.entities;
 
 public class Retangulo {
 	public double largura;

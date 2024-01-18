@@ -1,11 +1,11 @@
-package entities;
+package exerciciospoo.entities;
 
+import exerciciospoo.entities.enums.WorkerLevel;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
 
-import entities.enums.WorkerLevel;
 
 public class Worker {
 

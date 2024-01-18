@@ -1,4 +1,4 @@
-package entities;
+package exerciciospoo.entities;
 
 import java.time.LocalDate;
 import java.util.Date;

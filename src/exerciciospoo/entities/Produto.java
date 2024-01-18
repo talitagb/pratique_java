@@ -1,5 +1,5 @@
 
-package entities;
+package exerciciospoo.entities;
 
 public class Produto {
 

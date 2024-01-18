@@ -1,4 +1,10 @@
-package application;
+package exerciciospoo.application;
+
+import exerciciospoo.entities.Client;
+import exerciciospoo.entities.Order;
+import exerciciospoo.entities.OrderItem;
+import exerciciospoo.entities.Product;
+import exerciciospoo.entities.enums.OrderStatus;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -6,11 +12,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Client;
-import entities.Order;
-import entities.OrderItem;
-import entities.Product;
-import entities.enums.OrderStatus;
 
 public class ProgramOrder {
 
