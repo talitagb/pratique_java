@@ -3,7 +3,7 @@ package exerciciospoo.application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Retangulo;
+import exerciciospoo.entities.Retangulo;
 
 public class ProgramaRetangulo {
 

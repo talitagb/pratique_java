@@ -2,7 +2,7 @@ package exerciciospoo.application;
 
 import java.util.Scanner;
 
-import entities.Aluguel;
+import exerciciospoo.entities.Aluguel;
 
 public class ProgramaPensionato {
 

@@ -1,9 +1,9 @@
 package exerciciospoo.application;
 
+import exerciciospoo.entities.Triangulo;
+
 import java.util.Locale;
 import java.util.Scanner;
-
-import entities.Triangulo;
 
 public class ProgramaTriangulo {
 

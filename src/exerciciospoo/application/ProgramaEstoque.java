@@ -3,7 +3,7 @@ package exerciciospoo.application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Produto;
+import exerciciospoo.entities.Produto;
 
 public class ProgramaEstoque {
 

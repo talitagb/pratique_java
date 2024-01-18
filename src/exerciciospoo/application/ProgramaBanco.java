@@ -1,9 +1,10 @@
 package exerciciospoo.application;
 
+import exerciciospoo.entities.Conta;
+
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Conta;
 
 public class ProgramaBanco {
 
