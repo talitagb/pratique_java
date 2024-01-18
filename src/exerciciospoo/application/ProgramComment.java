@@ -1,10 +1,12 @@
-package application;
+package exerciciospoo.application;
+
+
+
+import exerciciospoo.entities.Comment;
+import exerciciospoo.entities.Post;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-
-import entities.Comment;
-import entities.Post;
 
 public class ProgramComment {
 

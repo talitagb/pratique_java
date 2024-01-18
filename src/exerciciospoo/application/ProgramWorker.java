@@ -1,14 +1,15 @@
-package application;
+package exerciciospoo.application;
+
+import exerciciospoo.entities.Department;
+import exerciciospoo.entities.HourContract;
+import exerciciospoo.entities.Worker;
+import exerciciospoo.entities.enums.WorkerLevel;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Department;
-import entities.HourContract;
-import entities.Worker;
-import entities.enums.WorkerLevel;
 
 public class ProgramWorker {
 
